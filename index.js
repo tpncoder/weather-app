@@ -31,7 +31,7 @@ async function setGrid(object) {
 	
 		weatherIcon(object.days[index], child[1]);	
 
-		child[2].textContent = day_temp.temp;
+		child[2].textContent = `${day_temp.temp}°C`;
 
 		if(typeof daylist[day + 1] === 'undefined') {
 			day = 0;

@@ -44,12 +44,6 @@ export async function todayInfo(day){
 	let children;
 	
 	for(var index = 0; index<=5; index++){	
-		child[index].style.background = "rgba(255, 255, 255, .7)";
-		child[index].style.borderRadius = "5%";
-		child[index].style.height = "25vh";
-		child[index].style.width = "20vw";
-		child[index].style.textAlign = "center";
-		
 		children = child[index].children;
 
 		children[0].style.paddingTop = "2vh";	

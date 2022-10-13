@@ -1,7 +1,6 @@
 import * as essentials from './modules/essentials.js';
 import * as variables from './modules/variables.js'
 import * as highlights from './modules/highlights.js';
-// import {index} from './modules/variables.js';
 
 async function weatherIcon(object, img) {	
 	let icon = object.icon;	
@@ -23,13 +22,6 @@ async function setGrid(object) {
 
 
 	for(var index = 0; index <=5; index++){
-		children[index].style.height = "25vh";
-		children[index].style.width = "12vw";
-		children[index].style.borderRadius = "5%";
-		children[index].style.background = "rgba(254, 255, 255, .7)";
-		children[index].style.webkitBackdropFilter = "blur(10px)";
-		children[index].style.backdropFilter = "blur(10px)";
-
 		child = children[index].children;
 		day_temp = object.days[index];
 

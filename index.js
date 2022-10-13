@@ -64,7 +64,7 @@ async function main() {
 	let today = obj.days[0];
 
 	weatherIcon(today, variables.image);	
-	essentials.display(resolvedAddress, variables.temp_str);
+	essentials.display(resolvedAddress, today, variables.temp_str);
 	setGrid(obj);
 	highlights.todayInfo(today);	
 }

@@ -8,3 +8,6 @@ This is a simple weather app made using the [Visual Crossing API](https://www.vi
 + run ```npm start``` or ```yarn start```
 + go to ```http://127.0.0.1:8080/```
 + Done!
+
+Or
++ Just visit https://tpncoder.github.io/weather-app

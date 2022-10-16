@@ -2,6 +2,11 @@ import * as essentials from './modules/essentials.js';
 import * as variables from './modules/variables.js'
 import * as highlights from './modules/highlights.js';
 
+
+$(window).on("load", function(){
+	$("#load").delay(3000).fadeOut("slow");	
+})
+
 async function weatherIcon(object, img) {	
 	let icon = object.icon;	
 	let img_name = `./images/4th Set - Color/${icon}.svg`;
@@ -26,8 +31,6 @@ async function setGrid(object) {
 		day_temp = object.days[index];
 
 		child[0].textContent = day_name;
-		child[0].style.paddingBottom = "2vh";
-		child[0].style.paddingTop = "2vh";
 	
 		weatherIcon(object.days[index], child[1]);	
 
@@ -40,7 +43,11 @@ async function setGrid(object) {
 			day++;
 			day_name = daylist[day];
 		}
-	}	
+	}
+
+	child = null;
+	children = null;
+	day_temp = null;	
 }
 
 async function main() {

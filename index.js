@@ -4,7 +4,7 @@ import * as highlights from './modules/highlights.js';
 
 
 $(window).on("load", function(){
-	$("#load").delay(3000).fadeOut("slow");	
+	$("#load").delay(5000).fadeOut("slow");	
 })
 
 async function weatherIcon(object, img) {	

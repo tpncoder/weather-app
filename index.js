@@ -34,7 +34,7 @@ async function setGrid(object) {
 	
 		weatherIcon(object.days[index], child[1]);	
 
-		child[2].textContent = day_temp.temp;
+		child[2].textContent = `${day_temp.temp}°C`;
 
 		if(typeof daylist[day + 1] === 'undefined') {
 			day = 0;
@@ -71,7 +71,7 @@ async function main() {
 	let today = obj.days[0];
 
 	weatherIcon(today, variables.image);	
-	essentials.display(resolvedAddress, variables.temp_str);
+	essentials.display(resolvedAddress, today, variables.temp_str);
 	setGrid(obj);
 	highlights.todayInfo(today);	
 }
